@@ -29,7 +29,8 @@ function List({ lists, removePost }) {
             Update
           </Link>
         </Button>
-        {/* <Button onClick={() => setData(lists)}>update</Button> */}
+       
+       
       </div>
     </div>
   );

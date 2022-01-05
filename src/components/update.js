@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Form, Button, Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import axios from "axios";
 export default function Update() {
   const [name, setName] = useState("");
@@ -46,6 +47,17 @@ export default function Update() {
           </Form>
           <Button type="submit" onClick={updateAPIData}>
             update
+          </Button>
+          <Button style={{ marginLeft: "5px" }}>
+            <Link
+              to="/"
+              style={{
+                textDecoration: "none",
+                color: "white",
+              }}
+            >
+              Back
+            </Link>
           </Button>
         </div>
       </Container>
