@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Form, Button, Container } from "react-bootstrap";
 import axios from "axios";
+import Read from "./Read";
 function Create() {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
@@ -46,6 +47,7 @@ function Create() {
             Submit
           </Button>
         </div>
+        <Read/>
       </Container>
     </div>
   );
